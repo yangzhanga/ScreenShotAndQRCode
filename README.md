@@ -30,3 +30,5 @@
         manager.stopListen();
     }
 ```
+### 效果图
+![image](https://github.com/yangzhanga/ScreenShotAndQRCode/raw/master/image/image.jpg)
