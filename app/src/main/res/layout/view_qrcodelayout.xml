@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#24be7b"
+    android:gravity="center">
+
+    <!--<com.qyer.android.jinnang.widget.FrescoImageView-->
+        <!--android:id="@+id/qrimg"-->
+        <!--android:layout_width="153dp"-->
+        <!--android:layout_height="148dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:background="#ffffff"-->
+        <!--fresco:placeholderImage="@drawable/layer_bg_cover_def_90"-->
+        <!--fresco:placeholderImageScaleType="fitXY"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="识别二维码，查看更多详情"-->
+        <!--/>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="-10dp">-->
+        <!--<com.qyer.android.jinnang.widget.FrescoImageView-->
+            <!--android:id="@+id/fiv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/qrcode_bottom"-->
+            <!--/>-->
+        <!--<com.qyer.android.jinnang.widget.FrescoImageView-->
+            <!--android:layout_width="86.4dp"-->
+            <!--android:layout_height="37.7dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/logo"/>-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

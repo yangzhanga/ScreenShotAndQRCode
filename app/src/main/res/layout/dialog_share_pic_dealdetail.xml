@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="分享"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="20sp" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_radius_corners_solid_trans90_white"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<com.qyer.android.jinnang.widget.FrescoImageView-->
+            <!--android:id="@+id/fivpic"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="255dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/shape_radius_corners_solid_trans90_white_top"-->
+            <!--android:scaleType="matrix"-->
+            <!--fresco:placeholderImage="@drawable/layer_bg_cover_def_90"-->
+            <!--fresco:placeholderImageScaleType="fitXY"-->
+            <!--fresco:roundedCornerRadius="6dp"-->
+            <!--fresco:roundBottomLeft="false"-->
+            <!--fresco:roundBottomRight="false"-->
+            <!--fresco:roundWithOverlayColor="@color/black_trans90"-->
+            <!--fresco:roundingBorderWidth="1dp"-->
+             <!--/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#f5f5f5"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:weightSum="4">-->
+            <!--&lt;!&ndash;微信&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llWXSessionDiv"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_weixin_session" />-->
+
+                <!--<com.qyer.android.jinnang.view.QaTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/share_to_weixin1"-->
+                    <!--android:textColor="#848484"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+            <!--&lt;!&ndash;朋友圈&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llWXTimelineDiv"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_weixin_timeline" />-->
+
+                <!--<com.qyer.android.jinnang.view.QaTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/share_to_weixin"-->
+                    <!--android:textColor="#848484"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+            <!--&lt;!&ndash;QQ&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llqqDiv"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_share_qq" />-->
+
+                <!--<com.qyer.android.jinnang.view.QaTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/share_to_qq"-->
+                    <!--android:textColor="#848484"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+            <!--&lt;!&ndash;微博&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llWeiboDiv"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_weibo" />-->
+
+                <!--<com.qyer.android.jinnang.view.QaTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/share_to_weibo"-->
+                    <!--android:textColor="#848484"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<View style="@style/qa_view_split_hori_gray" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvcancel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:background="@drawable/shape_radius_corners_solid_trans90_white_btm"-->
+            <!--android:paddingTop="15dp"-->
+            <!--android:text="取消"-->
+            <!--android:textColor="#444444"-->
+            <!--android:textSize="14sp" />-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

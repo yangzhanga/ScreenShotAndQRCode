@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ex_theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ex_theme_dialog" parent="@style/ex_theme">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <!-- 对话框样式，带白色圆角背景 -->
+    <style name="qa_ex_theme_dialog" parent="@style/ex_theme_dialog">
+        <item name="android:windowBackground">@drawable/bg_card_item_round</item>
+    </style>
+
+    <!-- 对话框,向上推出,向下退出 -->
+    <style name="ex_dialog_push_down" parent="ex_theme_dialog">
+        <item name="android:windowAnimationStyle">@style/dialog_up_to_down</item>
+    </style>
+
+    <style name="dialog_up_to_down" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_push_enter_up_short_time</item>
+        <item name="android:windowExitAnimation">@anim/anim_push_exit_down_short_time</item>
+    </style>
+</resources>
