@@ -19,9 +19,16 @@ import com.example.zhangyang.screenshotqrcodedemo.DealDetailPicShareDialog;
 import com.example.zhangyang.screenshotqrcodedemo.MyApplication;
 import com.example.zhangyang.screenshotqrcodedemo.R;
 
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+
+import io.reactivex.Flowable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by zhangyang on 2017/7/5.
@@ -35,17 +42,43 @@ public class ShareDealDetailScreenQRCodeUtils {
 
     public void showShare(Activity activity, String imgPath, String qrUrl) {
         mActivity = activity;
+
+        Flowable.just(getBitmap(imgPath, qrUrl))
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Subscriber<Bitmap>() {
+                    @Override
+                    public void onSubscribe(Subscription s) {
+
+                    }
+
+                    @Override
+                    public void onNext(Bitmap bitmap) {
+                        if(mActivity != null && !mActivity.isFinishing()){
+
+                            DealDetailPicShareDialog dialog = new DealDetailPicShareDialog(mActivity, bitmap, imglocalName);
+                            dialog.show();
+                        }
+                    }
+
+                    @Override
+                    public void onError(Throwable t) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+
+
+    }
+
+    private Bitmap getBitmap(String imgPath, String qrUrl) {
         //获取相册里的截屏图片，根据路径找到图片
         Bitmap bmp = BitmapUtils.getImage(imgPath, DeviceUtil.getScreenHeight());
-        //直接取得当前屏幕截屏
-//        Bitmap bmp1 = getCurrentScreen(mActivity);
-
-        Bitmap bmp2 = getQrCodeImage(bmp, qrUrl);
-
-        DealDetailPicShareDialog dialog = new DealDetailPicShareDialog(activity, bmp2, imglocalName);
-
-        dialog.show();
-
+        return getQrCodeImage(bmp, qrUrl);
     }
 
     /**
